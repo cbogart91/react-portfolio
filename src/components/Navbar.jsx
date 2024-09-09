@@ -1,6 +1,8 @@
-export default function Navbar(){
-    const linkStyle = { border: '1px black', padding: '5px' };
+import { Link, useLocation } from 'react-router-dom';
 
+function Navbar(){
+    const linkStyle = { border: '1px black', padding: '5px' };
+    const currentPage = useLocation().pathname;
     return (
         <nav className="main-header-menu">
         <section
@@ -12,19 +14,24 @@ export default function Navbar(){
             justifyContent: 'flex-start',
         }}
         >
-            <div style={linkStyle}>
-                <a href="#">About Me</a>
+             <div style={linkStyle}>
+                <Link to="/home" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Home</Link>
             </div>
             <div style={linkStyle}>
-                <a href="#">Projects</a>
+                <Link to="/aboutme" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>About Me</Link>
             </div>
             <div style={linkStyle}>
-                <a href="#">Resume</a>
+                <Link to="/projects" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Projects</Link>
             </div>
             <div style={linkStyle}>
-                <a href="#">Contact</a>
+                <Link to="/resume" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Resume</Link>
+            </div>
+            <div style={linkStyle}>
+                <Link to="/contacts" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Contact</Link>
             </div>
         </section>
         </nav>
     );
 }
+
+export default Navbar;
