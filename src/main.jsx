@@ -8,8 +8,9 @@ import App from './App';
 // import Error from './pages/Error';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
-// import Projects from './pages/Projects';
-// import Contacts from './pages/Contacts';
+import Projects from './pages/Projects';
+import Contacts from './pages/Contacts';
+import Resume from './pages/Resume';
 
 const router = createBrowserRouter([
   {
@@ -26,14 +27,18 @@ const router = createBrowserRouter([
         path: '/AboutMe',
         element: <AboutMe />,
       },
-      // {
-      //   path: '/Projects',
-      //   element: <Projects />,
-      // },
-      // {
-      //   path: '/contacts',
-      //   element: <Contacts />,
-      // },
+      {
+        path: '/Projects',
+        element: <Projects />,
+      },
+      {
+        path: '/Contacts',
+        element: <Contacts />,
+      },
+      {
+        path: '/Resume',
+        element: <Resume />,
+      },
     ],
   },
 ]);

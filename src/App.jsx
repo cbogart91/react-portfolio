@@ -2,6 +2,7 @@
 
 import { Outlet } from 'react-router-dom';
 import Nav from './components/Navbar';
+import Footer from './components/Footer';
 // import AboutMe from './components/AboutMe';
 // import Projects from '.components/Projects';
 
@@ -10,7 +11,8 @@ function App(){
     <>
     <Nav />
     <main className="mx-3">
-      <Outlet />
+    <Outlet />
+    <Footer />
     </main>
     </>
   );
