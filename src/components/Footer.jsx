@@ -1,7 +1,7 @@
 
 function Footer(){
     return (
-               <div className="flex justify-center flex-row absolute inset-x-0 bottom-0">
+               <div className="sticky bottom-0">
                 <a href="https://github.com/cbogart91">
                 <img src="/images/GitHub_Invertocat_Logo.svg" width="100"></img>
                 </a>
