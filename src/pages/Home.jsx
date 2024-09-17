@@ -1,10 +1,10 @@
 export default function Home(){
     return(
         <div>
-            <h1 className="text-xl font-bold text-red-700">Home Page</h1>
-            <p>
-                Welcome to my page!
-            </p>
+    
+        <p>Welcome to my page! My name is Cody Bogart and I have an aspiration for full stack web development!</p>
+
+        <img src="/images/wedding.jpg" height="600"></img>
         </div>
     );
 }

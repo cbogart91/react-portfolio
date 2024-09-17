@@ -3,8 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 function Header(){
     const currentPage = useLocation().pathname;
     return (
-      <header className="text-xl font-bold flex space-x-5">
-         
+      <header className="grid justify-items bg-slate-500 box-border h-32 p-2 border-2 ">
+        <h1>Cody Bogart</h1>
+         <div className="text-xl font-bold flex space-x-5 justify-self-end">
+
                 <div>
                 <Link to="/Home" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Home</Link>
                 </div>
@@ -24,7 +26,7 @@ function Header(){
                 <div>   
                 <Link to="/Contacts" className={currentPage === '/Contacts' ? 'nav-link active' : 'nav-link'}>Contact</Link>
                 </div>
-
+            </div>
         </header>
     );
 }
