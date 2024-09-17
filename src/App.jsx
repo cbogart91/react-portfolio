@@ -1,20 +1,30 @@
-////////////////this page will be constant and do not need to change///////////
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Outlet } from 'react-router-dom';
-import Nav from './components/Navbar';
+import AboutMe from './pages/AboutMe';
+import Contacts from './pages/Contacts';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+
+import Header from './components/Header';
 import Footer from './components/Footer';
-// import AboutMe from './components/AboutMe';
-// import Projects from '.components/Projects';
+
 
 function App(){
   return (
-    <>
-    <Nav />
-    <main className="mx-3">
-    <Outlet />
-    <Footer />
+    <Router>
+    <Header />
+    <main>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
     </main>
-    </>
+    <Footer />
+    </Router>
   );
 }
 
