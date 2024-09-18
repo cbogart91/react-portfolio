@@ -4,7 +4,7 @@ export default function Projects(){
 
             <div className="hover:opacity-25">
             <a href="https://github.com/cbogart91/logo-maker">
-            <img src="/images/logomaker.jpg"></img>
+            <img src="/images/logomaker.jpg" height="500"></img>
             </a>
             <p>Logo Maker</p>
             </div>
