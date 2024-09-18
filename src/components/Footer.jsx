@@ -1,7 +1,7 @@
 
-function Footer(){
+const Footer = () => {
     return (
-               <div className="sticky bottom-0">
+               <footer className="footer">
                 <a href="https://github.com/cbogart91">
                 <img src="/images/GitHub_Invertocat_Logo.svg" width="100"></img>
                 </a>
@@ -10,7 +10,7 @@ function Footer(){
                 <a href="https://www.linkedin.com/in/cody-bogart-2a5579113">
                 <img src="/images/linkedin.png" width="100"></img>
                 </a>
-            </div>
+            </footer>
     );
 };
 
