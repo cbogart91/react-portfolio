@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-    <footer className="bg-neutral-200 text-white dark:bg-neutral-600">
+    <footer className="bg-slate-500 text-white rounded">
           <div className="mb-5 flex justify-center">
             <a href="https://github.com/cbogart91">
              <img src="/images/github-mark-white.png" className="px-8 pt-4" height="40"></img>
