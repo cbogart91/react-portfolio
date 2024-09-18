@@ -1,6 +1,5 @@
 export default function Resume(){
-    return(
-        <div>
-    </div>
-    );
+  return(
+    <p>what</p>
+  );
 }
