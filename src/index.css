@@ -4,4 +4,12 @@
 
 :root {
     font-family: "Roboto Slab";
+    background-color: rgb(177, 174, 174);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

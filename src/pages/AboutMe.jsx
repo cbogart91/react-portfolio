@@ -4,7 +4,7 @@ export default function About(){
          
             <p>Hello everyone!</p>
             <img className="float-right" src="/images/me.jpg"></img>
-            <p>Ever since my dad introduced me to computers at a young, I had an interest in techology.</p>
+            <p>Ever since my dad introduced me to computers at a young age, I had an interest in techology.</p>
         </div>
     );
 }

@@ -1,16 +1,16 @@
 
 const Footer = () => {
     return (
-               <footer className="footer">
-                <a href="https://github.com/cbogart91">
-                <img src="/images/GitHub_Invertocat_Logo.svg" width="100"></img>
-                </a>
-              
-
-                <a href="https://www.linkedin.com/in/cody-bogart-2a5579113">
-                <img src="/images/linkedin.png" width="100"></img>
-                </a>
-            </footer>
+    <footer className="bg-neutral-200 text-white dark:bg-neutral-600">
+          <div className="mb-5 flex justify-center">
+            <a href="https://github.com/cbogart91">
+             <img src="/images/github-mark-white.png" className="px-8 pt-4" height="40"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/cody-bogart-2a5579113/">
+            <img src="/images/linkedin.png" className="px-8 pt-4" height="40"></img>
+            </a>
+          </div>
+      </footer>
     );
 };
 
