@@ -23,9 +23,7 @@ function Header(){
                 <Link to="/Resume" className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>Resume</Link>
                 </div>
 
-                <div>   
-                <Link to="/Contacts" className={currentPage === '/Contacts' ? 'nav-link active' : 'nav-link'}>Contact</Link>
-                </div>
+            
             </div>
         </header>
     );
