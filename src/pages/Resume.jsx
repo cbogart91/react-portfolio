@@ -11,6 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 // Text layer for React-PDF.
 import 'react-pdf/dist/Page/TextLayer.css';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 
 const Resume = () => {
 	const [numPages, setNumPages] = useState(null);
@@ -30,6 +31,7 @@ const Resume = () => {
 
 	return (
 		<div>
+			<div className="flex justify-center pt-6">
 			<nav>
 				<button onClick={goToPrevPage}>Prev</button>
 				<button onClick={goToNextPage}>Next</button>
@@ -37,13 +39,15 @@ const Resume = () => {
 					Page {pageNumber} of {numPages}
 				</p>
 			</nav>
+		</div>
 
+			<div className="flex justify-center pb-24">
 			<Document
-				file="document.pdf"
-				onLoadSuccess={onDocumentLoadSuccess}
-			>
+				file="resume2.pdf"
+				onLoadSuccess={onDocumentLoadSuccess}>
 				<Page pageNumber={pageNumber} />
 			</Document>
+			</div>
 		</div>
 	);
 };

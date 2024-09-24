@@ -1,6 +1,6 @@
 export default function Projects(){
     return(
-        <div className="flex flex-wrap gap-x-6 gap-y-4">
+        <div className="flex flex-wrap gap-x-6 gap-y-4 pt-8 pb-20">
 
             <div className="hover:opacity-25">
             <a href="https://github.com/cbogart91/logo-maker">
