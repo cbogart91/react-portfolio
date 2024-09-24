@@ -1,35 +1,41 @@
 export default function Projects(){
     return(
-        <div className="flex flex-wrap gap-x-6 gap-y-4 pt-8 pb-20">
-
-            <div className="hover:opacity-25">
+        <div className="grid grid-cols-2 grid-rows-4 gap-4 p-20">
+          
+            <div className="hover:opacity-75">
             <a href="https://github.com/cbogart91/logo-maker">
-            <img src="/images/logomaker.jpg" height="500"></img>
+            <img src="/images/logomaker.jpg" className="size-9/12 hover:size-full"></img>
             </a>
+            </div>
+
             <p>Logo Maker</p>
-            </div>
+          
 
-            <div className="hover:opacity-25">
+            <div className="hover:opacity-75">
             <a href="https://github.com/cbogart91/social-network">
-            <img src="/images/socialnetwork.jpg" height="500"></img>
+            <img src="/images/socialnetwork.jpg" className="size-9/12 hover:size-full"></img>
             </a>
+            </div>
+
             <p>Social Network</p>
-            </div>
+           
 
-            <div className="hover:opacity-25">
+            <div className="hover:opacity-75">
             <a href="https://github.com/cbogart91/weather-tracker">
-            <img src="/images/weatherapp.jpg" height="500"></img>
+            <img src="/images/weatherapp.jpg" className="size-9/12 hover:size-full"></img>
             </a>
+            </div>
             <p>Weather Tracker</p>
-            </div>
+           
 
-            <div className="hover:opacity-25">
+            <div className="hover:opacity-75">
             <a href="https://github.com/cbogart91/employee-tracker">
-            <img src="/images/employeetracker.jpg" height="500"></img>
+            <img src="/images/employeetracker.jpg" className="size-9/12 hover:size-full"></img>
             </a>
-            <p>Employee Tracker</p>
             </div>
-        
+      
+            <p>Employee Tracker</p>
+    
         </div>
     );
 }
