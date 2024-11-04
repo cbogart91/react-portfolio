@@ -371,7 +371,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\""
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run dev"
   },
   "keywords": [],
   "author": "",
