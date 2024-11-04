@@ -5,6 +5,7 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Message from './pages/Message';
 
 
 function App(){
@@ -12,17 +13,20 @@ function App(){
     <Router>
       <Header />
     <main>
-      
+  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/message" element={<Message />} />
       </Routes>
+      
     </main>
     <Footer />
     </Router>
+    
   );
 
 }

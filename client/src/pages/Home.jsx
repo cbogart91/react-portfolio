@@ -5,7 +5,7 @@ export default function Home(){
         <p>Welcome to my page! My name is Cody Bogart and I have an aspiration to be a full stack web development!</p>
         <p>Click the links to find out more about myself!</p>
         
-        <img src="/images/wedding.jpg" height="600"></img>
+        <img src="/images/wedding.jpg" height="600" className="pb-20"></img>
        
     </div>
     );

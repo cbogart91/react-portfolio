@@ -10,19 +10,29 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.8",
     "@syncfusion/ej2-react-buttons": "^27.1.50",
     "@syncfusion/ej2-react-grids": "^27.1.50",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "client": "^0.0.1",
     "css-loader": "^7.1.2",
     "framer-motion": "^11.7.0",
+    "graphql": "^16.9.0",
     "lucide-react": "^0.446.0",
+    "prop-types": "^15.8.1",
     "pspdfkit": "^2024.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-pdf": "^9.1.1",
     "react-responsive": "^10.0.0",
     "react-router-dom": "^6.26.2",
-    "tailwind-merge": "^2.5.2"
+    "react-scripts": "^5.0.1",
+    "socket.io": "^4.8.0",
+    "socket.io-client": "^4.8.0",
+    "styled-components": "^6.1.13",
+    "tailwind-merge": "^2.5.2",
+    "web-vitals": "^4.2.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

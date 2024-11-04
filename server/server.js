@@ -1,21 +1,27 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
-
-const ChatMessage = require('./models/chatMessage');
+const ChatMessage = require('./models/ChatMessage');
+const mongoose = require('mongoose')
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3003;
+
+// const db = require('./config/connection');
+
+require('dotenv').config()
 
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/react-portfolio', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+const source = process.env.ATLAS_CONNECTION
 
-app.get("/messages", async (req, res) => {
+mongoose.connect(source, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+})
+
+app.get('/messages', async (req, res) => {
     try{
         const messages = await ChatMessage.find();
         res.json(messages);
@@ -25,16 +31,16 @@ app.get("/messages", async (req, res) => {
     }
 });
 
-app.post("/messages", async (req, res) => {
+app.post('/messages', async (req, res) => {
     try {
         const { user, message } = req.body;
 
         if(!user || !message) {
-            return res.status(400).json({ error: "User and mesage are required!" });
+            return res.status(500).json({ error: "User and mesage are required!" });
         }
         const chatMessage = new ChatMessage({
             user,
-            message,
+            message
         });
 
         await chatMessage.save();
@@ -45,6 +51,7 @@ app.post("/messages", async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
+
+app.listen('PORT', () => {
     console.log(`Server running on ${PORT}`);
 });
