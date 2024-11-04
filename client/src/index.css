@@ -46,5 +46,5 @@ footer {
 }
 
 .navbar .active-box {
-    @apply absolute top-2 left-2 right-2 h-9 rounded-lg
+    @apply absolute rounded-lg bg-slate-400 -z-10 transition-[top,left] duration-500
 }
