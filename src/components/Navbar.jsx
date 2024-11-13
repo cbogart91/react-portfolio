@@ -31,13 +31,13 @@ function Navbar({ navOpen }){
     const navItems = [
         {
             label: 'Home',
-            link: 'Home',
+            link: '#home',
             className: 'nav-link active',
             ref: lastActiveLink
         },
         {
             label: 'About Me',
-            link: '#AboutMe',
+            link: '#aboutme',
             className: 'nav-link'
         },
         {

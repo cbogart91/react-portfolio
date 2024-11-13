@@ -1,7 +1,7 @@
 export default function About(){
     return(
        <section
-            id="AboutMe"
+            id="aboutme"
             className="section">
                 <div className="container">
                     <div className="bg-slate-500 p-7 rounded-2xl md:p-12">
