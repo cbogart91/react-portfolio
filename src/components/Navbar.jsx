@@ -37,12 +37,12 @@ function Navbar({ navOpen }){
         },
         {
             label: 'About Me',
-            link: 'AboutMe',
+            link: '#AboutMe',
             className: 'nav-link'
         },
         {
             label: 'Projects',
-            link: 'Projects',
+            link: '#work',
             className: 'nav-link'
         },
         {
