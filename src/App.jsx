@@ -20,7 +20,7 @@ function App(){
       <SkillCard />
       <Work />
     </main>
-    {/* <Footer /> */}
+    <Footer />
     </Router>
     
   );

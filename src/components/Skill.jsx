@@ -41,7 +41,7 @@ export default function Skill(){
             Essential tools I use
             </h2>
             <p className="">
-                These are the tools that I have learned and use to create websites.
+                These are the tools that I have learned and use to create websites:
             </p>
             <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
                 {

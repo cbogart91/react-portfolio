@@ -15,13 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 .headline-1 {
     @apply max-w-max;
     background: -webkit-linear-gradient(0deg, black, #027eb8);
@@ -112,4 +105,8 @@ footer {
 .btn-primary {
     @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300
     active:bg-sky-400
+}
+
+ul {
+    list-style: none;
 }
