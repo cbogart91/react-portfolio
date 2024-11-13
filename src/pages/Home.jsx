@@ -40,13 +40,13 @@ export default function Home(){
                         <ButtonOutline
                             href="AboutMe"
                             label="Scroll down"
-                            icon="arrow_downward" />
+                            icon=" " />
                     </div>
 
                 </div>
 
                 <div className="hidden lg:block">
-                    <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
+                    <figure className="w-full max-w-[480px] ml-auto overflow-hidden">
                         <img 
                             src="/images/wedding.jpg"
                             width="400"

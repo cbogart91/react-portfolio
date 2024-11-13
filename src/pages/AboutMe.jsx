@@ -1,14 +1,20 @@
 export default function About(){
     return(
-        <div>
-         
-            <p>Hello everyone!</p>
-            <img className="float-right" src="/images/me.jpg"></img>
-            <p> Ever since my dad introduced me to computers at a young age, I had an interest in techology. I am about 6 or 7 years old in this picture which is not even the age I started to use computers!<br></br>
-                My dad and I would play games such as Command & Conquer or Warcraft against each other via LAN with a cable that ran from my bedroom through our living room to my dads computer.<br></br>
-                <br></br>
-                
-            </p>
-        </div>
+       <section
+            id="AboutMe"
+            className="section">
+                <div className="container">
+                    <div className="bg-slate-500 p-7 rounded-2xl md:p-12">
+                        <p className="mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
+                        I have always had an interest in technology from a young age because of my dad. 
+                        He introduced me into computers and even let me have one in my room when I was around 8 years old!
+                        </p>
+
+                       
+                    </div>
+                </div>
+            </section>
     );
 }
+
+
