@@ -10,7 +10,7 @@ const SkillCard = ({
     return (
         <div className={'flex items-center gap-3 ring-2 ring-inset ring-slate-500 rounded-2xl p-3 hover:bg-slate-500 transition-colors group '
             + classes}>
-            <figure className="bg-slate-500 rounded-lg overflow-hidden p-2 group-hover:bg-zinc-900 transition-colors">
+            <figure className="bg-slate-700 rounded-lg overflow-hidden p-2 group-hover:bg-slate-500 transition-colors">
                 <img
                 src={imgSrc}
                 width={32}
