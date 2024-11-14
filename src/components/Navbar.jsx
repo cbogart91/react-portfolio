@@ -47,13 +47,13 @@ function Navbar({ navOpen }){
         },
         {
             label: 'Resume',
-            link: 'Resume',
+            link: '#resume',
             className: 'nav-link'
         },
         {
             label: 'Contact Me',
-            link: 'Contact Me',
-            className: 'nav-link md:hidden'
+            link: '#contact',
+            className: 'nav-link'
         }
     ];
     return (

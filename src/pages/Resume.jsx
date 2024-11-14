@@ -30,8 +30,13 @@ const Resume = () => {
 		);
 
 	return (
-		<div>
+		<div id="resume">
+			<section className="section">
+				<div className="container">
+			
+			<h2 className="headline-2 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">Resume</h2>
 			<div className="flex justify-center pt-6">
+				
 			<nav>
 				<button onClick={goToPrevPage}>Prev</button>
 				<button onClick={goToNextPage}>Next</button>
@@ -48,7 +53,10 @@ const Resume = () => {
 				<Page pageNumber={pageNumber} />
 			</Document>
 			</div>
+			
 		</div>
+	</section>
+	</div>
 	);
 };
 

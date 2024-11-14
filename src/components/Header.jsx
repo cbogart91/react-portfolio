@@ -17,10 +17,6 @@ function Header(){
                         </button>
                         <Navbar navOpen={navOpen} />
                     </div>
-                <a href="Contact"
-                    className="btn btn-secondary max-md:hidden md:justify-self-end">
-                        Contact Me
-                    </a>
             </div>
         </header>
     );
