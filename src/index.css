@@ -107,6 +107,11 @@ html {
     active:bg-sky-400
 }
 
+button {
+    @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300
+    active:bg-sky-400 rounded-xl
+}
+
 ul {
     list-style: none;
 }

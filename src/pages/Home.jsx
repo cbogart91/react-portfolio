@@ -1,6 +1,18 @@
 import { ButtonPrimary, ButtonOutline } from "../components/Button";
 
-export default function Home(){
+const Home = () => {
+    const onButtonClick = () => {
+        fetch("resume2.pdf").then((response) =>{
+            response.blob().then((blob) => {
+                const fileURL = 
+                    window.URL.createObjectURL(blob);
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "resume2.pdf";
+                alink.click();
+            });
+        });
+    };
     return(
         <section id="home" className="pt-28 lg:pt-36">
 
@@ -33,12 +45,14 @@ export default function Home(){
                         I am looking to be a web developer full time! Open to projects, networking, and simply having fun!
                     </h2>
                     <div className="flex items-center gap-3">
-                        <ButtonPrimary
+                        <button
+                            onClick={onButtonClick}
                             label="Download CV"
                             icon=" " 
-                            />
+                            id="button"
+                            >Download Resume</button>
                         <ButtonOutline
-                            href="AboutMe"
+                            href="#aboutme"
                             label="Scroll down"
                             icon=" " />
                     </div>
@@ -62,7 +76,7 @@ export default function Home(){
     );
 }
 
-
+export default Home
 
 
         
