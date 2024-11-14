@@ -110,3 +110,16 @@ html {
 ul {
     list-style: none;
 }
+
+.label {
+    @apply block text-slate-950 text-sm font-normal mb-2
+}
+
+.text-field {
+    @apply block outline-none w-full px-3 py-3 text-sm  bg-slate-200 rounded-xl ring-1 ring-inset ring-transparent 
+    transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
+}
+
+.text-field::placeholder {
+    @apply text-slate-950
+}

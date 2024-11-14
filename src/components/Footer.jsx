@@ -38,7 +38,7 @@ const Footer = () => {
             Thank you for visiting!
           </h2>
         <ButtonPrimary
-          href="mainto: cbogart91@gmail.com"
+          href="mailto: cbogart91@gmail.com"
           label="Start project"
         />
 
