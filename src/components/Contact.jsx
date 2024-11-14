@@ -55,7 +55,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className="px-6 py-6 mb-4">
+                <div className="px-6  mb-4">
                     <label 
                     htmlFor="message"
                     className="label"
