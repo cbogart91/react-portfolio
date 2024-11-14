@@ -36,7 +36,7 @@ const skillItem = [
 export default function Skill(){
     return(
     <section className="section">
-        <div className="container">
+        <div className="container bg-slate-400 px-6 py-2 rounded-2xl">
             <h2 className="headline-2">
             Essential tools I use
             </h2>

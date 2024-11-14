@@ -31,9 +31,9 @@ const socials = [
 const Footer = () => {
     return (
    <footer className="section">
-    <div className="container">
+    <div className="container bg-slate-500 px-6 py-2 rounded-2xl">
       <div className="lg:grid lg:grid-cols-2">
-        <div className="mb-10">
+        <div className="mb-12">
           <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
             Thank you for visiting!
           </h2>
