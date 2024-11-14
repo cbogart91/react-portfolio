@@ -31,6 +31,26 @@ const skillItem = [
         label: 'React',
         desc: 'Framework'
     },
+    {
+        imgSrc:'images/vite.svg',
+        label: 'Vite',
+        desc: 'Framework'
+    },
+    {
+        imgSrc:'images/express-js.png',
+        label: 'Express',
+        desc: 'Web application'
+    },
+    {
+        imgSrc:'images/graphql.png',
+        label: 'GraphQL',
+        desc: 'Database'
+    },
+    {
+        imgSrc:'images/netlify.png',
+        label: 'Netlify',
+        desc:'Deployment'
+    }
 ]
 
 export default function Skill(){
@@ -41,7 +61,7 @@ export default function Skill(){
             Essential tools I use
             </h2>
             <p className="">
-                These are the tools that I have learned and use to create websites:
+                These are the tools that I have learned and implemented into creating websites:
             </p>
             <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
                 {
